@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="Username" required maxlength="50"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="^[A-za-z0-9
+            _%+-]+@[A-za-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid email address">
+            <label for="salary" >Salary:</label>
+            <input type="number" name="salary" id="salary" min="0" max=" 100000" step="1000"><br><br>
+            <label for="natoinal-id" >Natoinal ID:</label>
+            <input type="text" name="natoinal-id" id="natoinal-id" required maxlength="13" 
+            pattern="^[0-9]{13}$"  title="Please enter the valid 13-digit natoinal-id">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contect Information</legend>
+            <label for="Phone">Phone number: </label>
+            <input type="tel" id="Phone" name="Phone" ><br><br>
+            
+        </fieldset>
+        <br>
+        <input type="submit" value="login">
+        <input type="reset" value="cancel">
+    </form>
+    
+     <!--I Made a Discord Server in 1 Minute, 10 Minutes & 1 Hour-->
+</body>
+</html>
