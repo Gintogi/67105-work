@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+    <style>
+        @import url("stlye.css");
+         h1,h2{
+            color: blue;
+            text-align: center;
+        }
+        div{
+            background-color: lightgray /*!important*/;
+            padding: 20px;
+            margin: 10px;
+        }
+        P{
+            font-size: 16px;
+            color: yellow;
+            background-color: red;
+        }       
+        
+        #div-id1{
+            background-color: lightblue;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        #div-id2{
+            background-color: lightgreen;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .div-class{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        h1,#div-id1, #div-id2,.div-class{
+            font-family: 'gill sans', 'gill sans MT', sans-serif;
+
+        }
+
+        a:hover{
+            color: red;
+        }
+        a:visited{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <h2 style="color: green; background-color: aqua;">This is a subheading</h2>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+
+    <div id="div-id1">
+        <p>This is another paragraph inside a different style div.</p>
+    </div>
+
+    <div id="div-id2" class="div-class">
+        <p>This is third paragraph inside a third style div.</p>
+    </div>
+
+    <a href="http://www.example.com">Visit My Page.</a>
+</body>
+</html>
