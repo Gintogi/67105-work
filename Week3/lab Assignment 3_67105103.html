@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Registration Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="register">
+                <h2>Registration Form</h2>
+                <p>Please fill in the form below to register.</p>
+                <form action="#" method="post">
+                    <label for="txtname">Name:</label>
+                    <input type="text" id="txtname" name="txtname" required><br><br>
+ 
+                    <label for="txtemail">Email:</label>
+                    <input type="email" id="txtemail" name="txtemail" required pattern="[a-z0-9._%+-]+@[a-z0-9._+-]+\.com" title="Please enter the valid email"><br><br>
+
+                    <label for="txtphone">Phone Number:</label>
+                    <input type="tel" id="txtphone" name="txtphone" pattern="[0-9]{10}" title="Please enter a valid Phone Number" required><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+                    
+                    <label for="txtusername">Username:</label>
+                    <input type="text" id="txtusername" name="txtusername" required><br><br>
+
+                    <label for="txtpassword">Password:</label>
+                    <input type="password" id="txtpassword" name="txtpassword" required ><br><br>
+                    
+ 
+                    <fieldset>
+                        <legend>Select your gender</legend>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+                        
+                    </fieldset><br>
+ 
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Registration Page. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+ 

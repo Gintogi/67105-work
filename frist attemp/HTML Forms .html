@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signup.php" method="post" enctype="multipart/form-data">
+        <label for="txtusername">Username:</label>
+        <input type="text" name="txtusername" placeholder="Username" required>
+        <br><br><label for="txtPassword">Password:</label>
+        <input type="password" name="txtPassword" placeholder="Password" required>
+        <br><br><label for="txtemail">Email:</label>
+        <input type="email" name="txtemail" placeholder="Email" required>
+        <br><br><label for="txttel">Phone Number:</label>
+        <input type="tel" name="txttel" placeholder="Phone Number" required>
+        <br><br><label for="txturl">Website URL:</label>
+        <input type="url" name="txturl" placeholder="Website URL" >
+        <br><br><label for="txtnumber">Number:</label>
+        <input type="number" name="txtnumber" placeholder="Number" >
+        <br><br><label for="txtdate">Date:</label>
+        <input type="date" name="txtdate" placeholder="Date" >
+        <br><br><label for="txttime">Time:</label>
+        <input type="time" name="txttime" placeholder="Time" >
+        <br><br><label for="txtcolor">Color:</label>
+        <input type="color" name="txtcolor" placeholder="Color" >
+        <br><br><input type="hidden" name="txthidden" placeholder="Hidden value" >
+
+        <label for="txtmeal">ตัวเลือกอาหาร</label><br>
+        <input type="checkbox" name="txtmeal-1" id="txtmeal-1" >ไก่ทอด<br>
+        <input type="checkbox" name="txtmeal-2" id="txtmeal-2" >แตงโม<br>
+        <input type="checkbox" name="txtmeal-3" id="txtmeal-3" >น้ำองุ่น<br>
+
+        <label for="rdomeal">ตัวเลือกอาหาร</label><br>
+        <input type="radio" name="rdomeal" id="txtmeal-4" >ไก่ทอด<br>
+        <input type="radio" name="rdomeal" id="txtmeal-5" >แตงโม<br>
+        <input type="radio" name="rdomeal" id="txtmeal-6" >น้ำองุ่น<br>
+
+        <label for="rdomeal">ตัวเลือกอาหาร</label>
+        <select name="rdomeal" id="selmeal">
+            <option value="txtmeal-4">ไก่ทอด</option>
+            <option value="txtmeal-5">แตงโม</option>
+            <option value="txtmeal-6">น้ำองุ่น</option>
+        </select>
+        
+        <br><br><label for="txtfile">File:</label>
+        <input type="file" name="txtfile" placeholder="File" >
+        <br><br><label for="txtarea">Description:</label>
+        <br><textarea name="txtarea" placeholder="Enter a description" cols="30" rows="20"></textarea>
+        <br><br><button type="submit">confirm</button>
+        <button type="reset">cancel</button>
+    </form>
+</body>
+</html>
