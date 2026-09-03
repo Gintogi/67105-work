@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+        } 
+    </style>
+
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#" aria-label="Airline home">
+                <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 38px; height: 38px; font-size: 1.2rem;">
+                    ✈
+                </span>
+                <span>Airline</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">เช็คอิน</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    เที่ยวบิน
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">ราคาการเดินทาง</a></li>
+                    <li><a class="dropdown-item" href="#">สถานที่ท่องเที่ยว</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">โปรโมชั่น</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">ช่วยเหลือ</a>
+                </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-primary position-relative">
+                News
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN CONTENT-->
+    <!--hero section-->
+    <!--add 3 feature cards under hero section -->
+    <!--ช่วยใสโลโก้ตรงมุมซ้ายเป็นโลโก้เครื่องบิน-->
+    <!--แก้ไขภาพและตัวอักษรสวยกว่านี้และใหญ่ขึ้นและเข้ากับเว็บการบินหน่อย-->
+    <!--เพิ่มการ์ดสถานที่ท่องเที่ยวแบบเรียงลงมาโดยแต่ละอันมีรายละเอียดนิดหน่อย-->
+    <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Scenic mountain view" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block" style="bottom: 18%; left: 8%; right: 45%; text-align: left;">
+                    <h5 style="font-size: 2.4rem; font-weight: 700; letter-spacing: 0.04em; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">บินสู่จุดหมายใหม่</h5>
+                    <p style="font-size: 1.05rem; line-height: 1.7; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">สำรวจประสบการณ์การเดินทางที่สะดวกสบายและปลอดภัยพร้อมราคาโปรโมชั่นสุดพิเศษ</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Forest landscape" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block" style="bottom: 18%; left: 8%; right: 45%; text-align: left;">
+                    <h5 style="font-size: 2.4rem; font-weight: 700; letter-spacing: 0.04em; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">ท่องเที่ยวแบบไม่จำกัด</h5>
+                    <p style="font-size: 1.05rem; line-height: 1.7; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">เลือกเที่ยวบินที่เหมาะกับทุกการเดินทาง รวมถึงวันหยุดและทริปสำคัญของคุณ</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Lake view" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block" style="bottom: 18%; left: 8%; right: 45%; text-align: left;">
+                    <h5 style="font-size: 2.4rem; font-weight: 700; letter-spacing: 0.04em; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">บริการระดับโลก</h5>
+                    <p style="font-size: 1.05rem; line-height: 1.7; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">เพลิดเพลินกับการเดินทางที่รวดเร็ว เรียบง่าย และให้ความสำคัญกับความสะดวกของผู้โดยสาร</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3 text-primary fs-2">⚡</div>
+                        <h5 class="card-title">จองเร็วทันใจ</h5>
+                        <p class="card-text">ค้นหาและจองเที่ยวบินได้ภายในเวลาอันสั้น พร้อมราคาที่โปร่งและชัดเจน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3 text-success fs-2">✅</div>
+                        <h5 class="card-title">ใช้งานง่าย</h5>
+                        <p class="card-text">ระบบการค้นหาและเช็คอินออกแบบให้ใช้งานได้ง่ายสำหรับทุกคน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3 text-warning fs-2">⭐</div>
+                        <h5 class="card-title">บริการที่เชื่อถือได้</h5>
+                        <p class="card-text">ทีมงานพร้อมให้ความช่วยเหลือและดูแลทุกขั้นตอนของการเดินทางอย่างใกล้ชิด</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">สถานที่ท่องเที่ยวยอดนิยม</h2>
+            <a href="#" class="text-primary text-decoration-none">ดูทั้งหมด</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0 overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="เกาะภูเก็ต" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">ภูเก็ต</h5>
+                        <p class="card-text">เกาะที่มีชายหาดสวยและกิจกรรมทางน้ำมากมาย เหมาะสำหรับวันหยุดพักผ่อนสุดพิเศษ</p>
+                        <a href="#" class="btn btn-primary btn-sm">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0 overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="กรุงเทพมหานคร" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">กรุงเทพฯ</h5>
+                        <p class="card-text">เมืองหลวงที่เต็มไปด้วยวัฒนธรรม อาหารอร่อย และแหล่งช้อปปิ้งที่คึกคักตลอดทั้งวัน</p>
+                        <a href="#" class="btn btn-primary btn-sm">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0 overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="เชียงใหม่" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">เชียงใหม่</h5>
+                        <p class="card-text">เมืองเหนือที่มีธรรมชาติอุดมสมบูรณ์ วัดสวย และบรรยากาศเย็นสบายเหมาะสำหรับทริปพักผ่อน</p>
+                        <a href="#" class="btn btn-primary btn-sm">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
