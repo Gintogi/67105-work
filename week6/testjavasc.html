@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test javascript</title>
+    <script>
+        //this is a simple comment in javascript
+        /* 
+            this is a multi-line comment in javascript
+        */
+        let message1 = "Hello, World!";
+        let message2 = "Welcome to JavaScript!";
+        alert(message1); // Display an alert with the first message
+        document.write(message1+" "+message2); // Write both messages to the document
+        console.log(message1); // Log the first message to the console
+        
+        let number1 = "10";
+        let number2 = 10;
+        if (number1 == number2) {
+            console.log("The values are equal.");
+        } else {
+            console.log("The values are not equal.");
+        }
+
+        if (number1 === number2) {
+            console.log("The values and types are equal.");
+        } else {
+            console.log("The values and types are not equal.");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        //prompt("Please enter your score: ", score);
+        let score = parseFloat(prompt("Please enter your score: "));
+        if (score >= 80) {  
+            console.log("Grade: A");
+        } else if (score >= 75) {
+            console.log("Grade: B+");
+        } else if (score >= 70) {
+            console.log("Grade: B");
+        } else if (score >= 65) {
+            console.log("Grade: C+");
+        } else if (score >= 60) {
+            console.log("Grade: C");
+        }else if (score >= 55) {
+            console.log("Grade: D+");
+        }else if (score >= 50) {
+            console.log("Grade: D");
+        }else {
+            console.log("Grade: F");
+        }
+    </script>
+</body>
+</html>

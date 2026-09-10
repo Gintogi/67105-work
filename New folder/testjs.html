@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- <script src="grad.js"></script> -->
+    
+    <script>
+        /*fruit = ["Apple", "Banana","Papaya", "Cherry","Orange"];
+        for (let i=0; i<fruit.length; i++){
+            document.write("<br>Fruit " + (i+1) + ": " + fruit[i]);
+        }
+
+        let i = 0;
+        while (i < fruit.length){
+            document.write("<br>Fruit " + (i+1) + ": " + fruit[i]);
+            i++;
+        }
+        let j=0;
+        do{
+            document.write("<br>Fruit " + (j+1) + ": " + fruit[j]);
+            j++;
+        }while(j<fruit.length);*/
+
+        let students = { 
+            name: "John", 
+            age: 20, 
+            major : "Computer Science" 
+        };
+
+        document.write("<br>Student Name: " + students.name);
+        document.write("<br>Student Age: " + students.age);
+        document.write("<br>Student Major: " + students.major);
+
+    </script>
+</head>
+
+<body>
+    <script>
+        printName();
+        printNames("John Doe");  
+        // Call the function from grad.js
+        let score = parseFloat(prompt("Please enter your score: "));
+        let ret_grade  = calculateGrade(score);
+        document.write("Your grade is: " + ret_grade);
+           
+        let ret_total = totalPrize(100, 50);
+        document.write("<br>Total prize is: " + ret_total);
+
+        let  ret_totalWithTax = totalPrizeWithTax(100, 50, 0.1);
+        document.write("<br>Total prize with tax is: " + ret_totalWithTax);
+
+    </script>
+
+</body>
+
+</html>
