@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">Javascript DOM</h2>
+    <div class="content"></div>
+    <p class="content">This is a paragraph</p>  
+    <script>
+        let title = document.getElementById("title");
+        title.innerHTML ="Hello Javascript";
+
+        let content = document.querySelectorAll(".content");
+        content[0].innerHTML = "This is content area";
+        content[1].innerHTML = "This is another content area";
+        content[1].style.color = "red";
+    </script>
+</body>
+</html>

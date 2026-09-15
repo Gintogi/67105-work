@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click Me</button>
+    <div id="content" onmouseover="changContent()" onmouseout="changeContentBack()">This is content area</div>
+    <button id="resetButton">Reset</button>
+
+    <ol id="coffeeMenu"> Coffeemenu
+        <li>Americano</li>
+        <li>Capuccino</li>
+    </ol>
+    <button id="menuButton" onclick="showMenu()">Show menu</button>
+
+
+    <script>
+        function showMenu(){
+            let menu = document.getElementById("coffeeMenu");
+            let menuList = document.createElement("li");
+            menuList.textContent = "Latte";
+            menu.appendChild(menuList);
+        }
+        
+
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", function(){
+            alert("Button Clicked");
+        });
+
+        function changContent(){
+            let content = document.getElementById("content");
+            content.style.backgroundColor = "red";
+        }
+        function changeContentBack(){
+            let content = document.getElementById("content");
+            content.style.backgroundColor = "white";
+        }
+
+        let resetButton = document.getElementById("resetButton");
+        resetButton.onclick = function() {
+            alert("Reset button clicked");
+        };
+    </script>
+</body>
+</html>
