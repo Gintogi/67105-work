@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script >
+
+    </script>
+</head>
+<body>
+
+    <script >
+        const vat = 0.7;
+        function orderCalculator(price, quantity){
+            let total = price * quantity;
+            total += total * vat;
+            return total;
+        }
+
+        function deliveryCalculator(totalPrize,memberStatus){
+            let deliveryFee = 0;
+            if (totalPrize > 500){
+                return deliveryFee;
+            } else if(memberStatus){
+                deliveryFee = 30;
+            }else {
+                deliveryFee = 50;
+            }
+            return deliveryFee;
+        }
+        
+        let product1 = {
+            name : "Laptop",
+            price : 1000,
+            quantity : 2
+        }
+
+        let product2 = {
+            name : "Phone",
+            price : 500,
+            quantity : 3
+        }   
+
+        document.write("<h2>Order Detials for Producr1 </h2>");
+        document.write("<br>Product Name: " + product1.name);
+        document.write("<br>Product Price: " + product1.price);
+        document.write("<br>Product Quantity: " + product1.quantity);
+        document.write("<br>SubTotal for Product 1: " + (product1.price * product1.quantity).toFixed(2));
+        document.write("<br>Total + VAT: " + orderCalculator(product1.price, product1.quantity).toFixed(2));
+
+        document.write("<h2>Order Detials for Producr2 </h2>");
+        document.write("<br>Product Name: " + product2.name);   
+        document.write("<br>Product Price: " + product2.price);
+        document.write("<br>Product Quantity: " + product2.quantity);
+        document.write("<br>SubTotal for Product 2: " + (product2.price * product2.quantity).toFixed(2));
+        document.write("<br>Total + VAT: " + orderCalculator(product2.price, product2.quantity).toFixed(2));
+        
+        let totalPrize1 = orderCalculator(product1.price, product1.quantity);
+        let memberStatus1 = true;
+        document.write("<h2>Delivert Fee</h2>");
+        document.write("<br>total Prize: " + totalPrize1.toFixed(2));
+        document.write("<br>Delivery Fee: " + deliveryCalculator(totalPrize1, memberStatus1).toFixed(2));
+        document.write("<br>Grand Total: " + (totalPrize1 + deliveryCalculator(totalPrize1, memberStatus1)).toFixed(2));
+
+    </script>   
+</body>
+</html>
