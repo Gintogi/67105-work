@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <BUTTON id="add">Add</BUTTON>
+    <BUTTON id="reset">Reset</BUTTON>
+    <div id="count" class="cntNum">0</div>
+
+    <script>
+        let count = 0;
+
+        let addButton = document.querySelector("#add");
+
+        let countDiv = document.querySelector(".cntNum");
+
+        addButton.addEventListener("click", function(){
+            count++;
+            countDiv.textContent = count;
+        });
+
+        let resetButton = document.querySelector("#reset");
+
+        resetButton.addEventListener("click", function(){
+            count = 0;
+            countDiv.textContent = count;
+            localStorage.removeItem("STORAGE_KEY");
+            countDiv.textContent = count;
+        });
+
+        addButton.addEventListener("click", function(){
+            count++;
+            localStorage.setItem("STORAGE_KEY", count);
+            countDiv.textContent = count;
+        });
+
+
+    </script>
+    
+</body>
+</html>
